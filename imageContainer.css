@@ -4,6 +4,7 @@
   grid-template-rows: repeat(6, auto);
   max-width: 24rem;
   margin: 0 auto;
+  height: 100%;
 }
 
   img {
