@@ -1,0 +1,54 @@
+body{
+  background-color:lightgray;
+}
+
+div {
+  text-align: center;
+  padding: 150px;
+}
+svg {
+	fill: turquoise;
+	}
+
+	#background {
+	fill:none;
+	stroke:rgb(255, 65, 168);
+	stroke-miterlimit:50;
+	stroke-dasharray: 300;
+	stroke-dashoffset:0;
+	-webkit-animation: dash 8s ease infinite;
+	-o-animation: dash 8s ease infinite;
+	-moz-animation: dash ease linear infinite;
+	animation: dash 8s ease infinite;
+  }
+  
+  #l, #firstA, #r, #secondA{
+    -webkit-animation: blink 8s ease infinite;
+    -o-animation: blink 8s ease infinite;
+    -moz-animation: blink ease linear infinite;
+    animation: blink 8s ease infinite;
+
+  }
+
+  @-webkit-keyframes blink {
+    0%, 100%{
+    opacity: 1;
+    transform:skewX(15deg);
+    }
+    50% {
+      opacity: 0;
+      transform:skewX(2deg);
+      transform:skewY(2deg);
+      }
+    }
+@-webkit-keyframes dash {
+	0%, 100%{
+  stroke-dashoffset: 1000px;
+  transform:skewY(15deg)
+	}
+	50% {
+  stroke-dashoffset:2000;
+  transform:skewY(2deg)
+  
+		}
+	}
