@@ -1,0 +1,31 @@
+span {
+    display: inline-block;
+    padding-top: 6px;
+    /* font-size: 30px; */
+    white-space: nowrap;
+    margin-right: -7px;
+}
+.firstLetter{
+    animation: fadeOut 5s infinite;
+}
+
+h1 {
+ 
+   
+}
+
+
+
+@keyframes fadeOut {
+    0%, 20% {
+        opacity: 1;
+        font-weight: italic;
+
+    }
+    50% {
+        opacity: 0;
+        font-weight: bold;
+    }
+
+
+}
