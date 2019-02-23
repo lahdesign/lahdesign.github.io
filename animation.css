@@ -13,9 +13,9 @@ svg {
 	#background {
 	fill:none;
 	stroke:rgb(255, 65, 168);
-	stroke-miterlimit:50;
+	stroke-miterlimit:90;
 	stroke-dasharray: 300;
-	stroke-dashoffset:0;
+	stroke-dashoffset: 6;
 	-webkit-animation: dash 8s ease infinite;
 	-o-animation: dash 8s ease infinite;
 	-moz-animation: dash ease linear infinite;
@@ -37,18 +37,20 @@ svg {
     }
     50% {
       opacity: 0;
-      transform:skewX(2deg);
-      transform:skewY(2deg);
+      transform:skewX(0deg);
+      transform:skewY(0deg);
       }
     }
 @-webkit-keyframes dash {
 	0%, 100%{
-  stroke-dashoffset: 1000px;
-  transform:skewY(15deg)
+  stroke-dashoffset: 2000px;
+  transform:skewY(15deg);
+  stroke-width: .5px;
 	}
 	50% {
-  stroke-dashoffset:2000;
-  transform:skewY(2deg)
+  stroke-dashoffset:3000;
+  transform:skewY(2deg);
+  stroke-width: 2px;
   
 		}
 	}
