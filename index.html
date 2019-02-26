@@ -59,5 +59,34 @@
             AS LOVE 
             <span class="firstLetter">T</span>
             HERE</h1>
+
+            <audio controls>
+                <source src="assets/audio/07042214.wav" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio>
+
+              <audio controls loop>
+                <source src="assets/audio/07042214.wav" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio>
+              
+              <p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+<script src="main.js"></script>
+<script>
+    var x = document.getElementById("myAudio"); 
+    
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
+              </body>
+              </html>
 </body>
 </html>

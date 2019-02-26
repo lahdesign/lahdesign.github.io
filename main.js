@@ -1,3 +1,13 @@
+let x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause();
+
+
 const onNameClick = function () {
   //  console.log('got into function')
   //   $('#message').text('Welcome to the moon.')
