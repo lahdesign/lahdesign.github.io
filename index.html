@@ -301,7 +301,7 @@
             <div>Project Ten</div>
         </div>
         
-
+<!-- standard audio player -->
             <audio controls>
                 <source src="assets/audio/07042214.wav" type="audio/ogg">
               Your browser does not support the audio element.
@@ -312,22 +312,32 @@
               Your browser does not support the audio element.
               </audio>
               
+             
+             
+<!-- controlled by button clicking  -->
               <p>Click the buttons to play or pause the audio.</p>
 
-<button onclick="playAudio()" type="button">Play Audio</button>
-<button onclick="pauseAudio()" type="button">Pause Audio</button> 
-<script src="main.js"></script>
-<script>
-    var x = document.getElementById("myAudio"); 
-    
-    function playAudio() { 
-      x.play(); 
-    } 
-    
-    function pauseAudio() { 
-      x.pause(); 
-    } 
-    </script>
+              <audio id="myAudio">
+                    <source src="assets/audio/07042214.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                  
+            
+                  
+                  <button onclick="playAudio()" type="button">Play Audio</button>
+                  <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+                  
+                  <script>
+                  var x = document.getElementById("myAudio"); 
+                  
+                  function playAudio() { 
+                    x.play(); 
+                  } 
+                  
+                  function pauseAudio() { 
+                    x.pause(); 
+                  } 
+                  </script>
               </body>
               </html>
 </body>

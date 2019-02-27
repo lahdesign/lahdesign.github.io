@@ -1,11 +1,11 @@
-let x = document.getElementById("myAudio"); 
+// let x = document.getElementById("myAudio"); 
 
-function playAudio() { 
-  x.play(); 
-} 
+// function playAudio() { 
+//   x.play(); 
+// } 
 
-function pauseAudio() { 
-  x.pause();
+// function pauseAudio() { 
+//   x.pause();
 
 
 const onNameClick = function () {
